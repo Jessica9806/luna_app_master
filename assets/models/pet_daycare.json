@@ -1,0 +1,12 @@
+{
+  "time_eat": "2019-08-24T14:15:22Z",
+  "notes": "string",
+  "departure_date": "2019-08-24T14:15:22Z",
+  "moment_payment": "string",
+  "price": 0,
+  "form_payment": "string",
+  "is_paid": false,
+  "patient": 0,
+  "id": 0,
+  "admission_date": "2022-11-26T23:16:39.836519"
+}

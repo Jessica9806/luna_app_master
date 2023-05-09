@@ -1,0 +1,13 @@
+{
+  "name": "string",
+  "internal_code": "string",
+  "barcode": "string",
+  "price": 0,
+  "stock": 0,
+  "minimun_amount": 0,
+  "due_date": "2019-08-24T14:15:22Z",
+  "location": "string",
+  "product_category": 0,
+  "provider": 0,
+  "id": 0
+}

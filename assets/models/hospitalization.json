@@ -1,0 +1,11 @@
+{
+  "diagnosis": "diagnosis",
+  "aspect": "aspect",
+  "weight": 0,
+  "feeding": "string",
+  "observation": "string",
+  "other_indications": "string",
+  "parameters": "string",
+  "id": 0,
+  "date": "2022-11-26T23:16:39.754547"
+}

@@ -1,0 +1,22 @@
+{
+  "date": "2019-08-24T14:15:22Z",
+  "reason_visit": "Reason visit",
+  "anommesis": "Anommesis",
+  "physical_exam": "Phisical exam",
+  "diagnosis": "Examen diagnosis",
+  "pathology": "pathology",
+  "treatment": "Trealment",
+  "recipe": "Recipe",
+  "price": 0,
+  "send_whatsapp": false,
+  "send_email": false,
+  "send_sms": false,
+  "form_payment": "string",
+  "is_paid": false,
+  "user": 0,
+  "vaccine": 0,
+  "dewormer": 0,
+  "patient": 0,
+  "id": 0,
+  "created_at": "2022-11-26T23:16:38.764609"
+}

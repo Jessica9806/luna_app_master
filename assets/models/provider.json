@@ -1,0 +1,12 @@
+{
+  "name": "string",
+  "phone": "string",
+  "ruc": "stringstrings",
+  "email": "user@example.com",
+  "country": "string",
+  "province": "string",
+  "city": "string",
+  "address": "string",
+  "postal_code": "string",
+  "id": 0
+}

@@ -1,0 +1,22 @@
+{
+  "name": "name",
+  "birthday": "2019-08-24T14:15:22Z",
+  "years": 0,
+  "months": 0,
+  "gender": "string",
+  "fur": "string",
+  "food_consumer": "string",
+  "is_heat": false,
+  "is_pedigree": false,
+  "is_reproductive": false,
+  "is_castrated": false,
+  "pathologies": "string",
+  "photo": "string",
+  "chip": "string",
+  "aggressive": 0,
+  "specie": 0,
+  "breed": 0,
+  "client": 0,
+  "id": 0,
+  "is_dead": false
+}
