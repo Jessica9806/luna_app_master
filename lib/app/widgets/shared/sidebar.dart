@@ -1,15 +1,23 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:luna_app/app/routes/app_pages.dart';
 import 'package:luna_app/app/widgets/shared/widgets/logo.dart';
 import 'package:luna_app/app/widgets/shared/widgets/menu_options.dart';
+import 'package:luna_app/app/widgets/shared/widgets/sidemenu_provider.dart';
 import 'package:luna_app/app/widgets/shared/widgets/text_separator.dart';
-
 
 //barra de menu
 
 class SideBar extends StatelessWidget {
 
+  void navigateTo(String routeName){
+    Get.toNamed(routeName);
+    SideMenuProvider.closeMenu();
+  }
+
   @override
   Widget build(BuildContext context) {
+    
     return Container(
       width: 200,
       height: double.infinity,
@@ -27,8 +35,8 @@ class SideBar extends StatelessWidget {
               text: 'Clientes',
               icon: Icons.people_alt_outlined,
               onPressed: (){
-                // NavigationService.navigateTo(Flurorouter.dashboardRoute);
-                // SideMenuProvider.closeMenu();
+                Get.toNamed(Routes.DASHBOARD);
+                SideMenuProvider.closeMenu();
               }
           ),
 
@@ -36,15 +44,16 @@ class SideBar extends StatelessWidget {
               text: 'Pacientes',
               icon: Icons.pets,
               onPressed: (){
-                // NavigationService.navigateTo(Flurorouter.pacientesRoute);
-                // SideMenuProvider.closeMenu();
+                navigateTo(Routes.PATIENT);
               }
           ),
 
           MenuOptions(
               text: 'Citas',
               icon: Icons.check_box,
-              onPressed: ()=>print('Dashboard')
+              onPressed: (){
+                navigateTo(Routes.CLIENT);
+              }
           ),
 
           SizedBox(height: 20),

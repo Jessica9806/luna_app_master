@@ -2,30 +2,32 @@ name: luna_app
 version: 1.0.0+1
 publish_to: none
 description: A new Flutter project.
-environment: 
+environment:
   sdk: '>=2.18.4 <3.0.0'
 
-dependencies: 
+dependencies:
   cupertino_icons: ^1.0.2
+  dio: ^5.1.2
+  dotted_border: 2.0.0+3
+  eva_icons_flutter: 3.1.0
+  flutter:
+    sdk: flutter
   get: 4.6.5
   get_storage: 2.0.3
-  http: 0.13.5
-  eva_icons_flutter: 3.1.0
-  intl: ^0.17.0
-  dotted_border: 2.0.0+3
-  timeago: 3.3.0
   google_fonts: ^4.0.3
-  percent_indicator: 4.2.2
+  http: 0.13.5
+  intl: ^0.17.0
   lottie: ^2.2.0
-  flutter: 
-    sdk: flutter
+  percent_indicator: 4.2.2
+  provider: ^6.0.5
+  timeago: 3.3.0
 
-dev_dependencies: 
+dev_dependencies:
   flutter_lints: 2.0.1
-  flutter_test: 
+  flutter_test:
     sdk: flutter
 
-flutter: 
+flutter:
   uses-material-design: true
 
   assets:

@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 
-class SideMenuProvider{
+class SideMenuProvider  {
   static late AnimationController menuController;
   static bool isOpen=false;
+
+ 
 
   static Animation<double> movement=Tween<double>(begin: -200,end: 0)
   .animate(CurvedAnimation(parent: menuController, curve: Curves.easeInOut));

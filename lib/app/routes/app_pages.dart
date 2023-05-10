@@ -6,6 +6,7 @@ import 'package:luna_app/app/modules/auth/views/auth/register_view.dart';
 import 'package:luna_app/app/modules/laboratory/views/laboratory_view.dart';
 import 'package:luna_app/app/modules/layout/views/dashboard_layout.dart';
 import 'package:luna_app/app/modules/layout/views/dashboard_view.dart';
+import 'package:luna_app/app/widgets/shared/icons_view.dart';
 import '../modules/appointment/bindings/appointment_binding.dart';
 import '../modules/appointment/views/appointment_view.dart';
 import '../modules/breed/bindings/breed_binding.dart';
@@ -90,7 +91,7 @@ class AppPages {
     ),
     GetPage(
       name: _Paths.CLIENT,
-      page: () => const ClientView(),
+      page: () =>  DashboardLayout(child: IconsView(),),
       binding: ClientBinding(),
     ),
     GetPage(
@@ -166,7 +167,7 @@ class AppPages {
     // ),
     GetPage(
       name: _Paths.PATIENT,
-      page: () => const PatientView(),
+      page: () =>  DashboardLayout(child: PatientView()),
       binding: PatientBinding(),
     ),
     GetPage(
