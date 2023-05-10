@@ -1,18 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:luna_app/app/data_tables/pacientes_datasource.dart';
+import 'package:luna_app/app/modules/patient/controllers/patient_controller.dart';
 import 'package:luna_app/app/widgets/buttons/custom_icon_button.dart';
 import 'package:luna_app/app/widgets/labels/custom_labels.dart';
 
-class PatientView extends StatefulWidget {
-
-  @override
-  State<PatientView> createState() => _PatientViewState();
-}
-
-class _PatientViewState extends State<PatientView> {
+class PatientView extends GetView<PatientController> {
 
   int _rowsPerPages=PaginatedDataTable.defaultRowsPerPage;
-
 
   @override
   Widget build(BuildContext context) {
@@ -34,11 +29,11 @@ class _PatientViewState extends State<PatientView> {
             ],
             source: PacientesDTS(),
             header: Text('Listado de pacientes registrados', maxLines: 2,),
-            onRowsPerPageChanged: (value) {
-              setState(() {
-                _rowsPerPages=value??10;
-              });
-            },
+            // onRowsPerPageChanged: (value) {
+            //   setState(() {
+            //     _rowsPerPages=value??10;
+            //   });
+            // },
             rowsPerPage: _rowsPerPages,
             actions: [
               CustomIconButton(
@@ -54,3 +49,4 @@ class _PatientViewState extends State<PatientView> {
     );
   }
 }
+
